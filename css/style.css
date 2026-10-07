@@ -1,0 +1,506 @@
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --accent: #f59e0b;
+    --dark: #0f172a;
+    --light: #f1f5f9;
+    --text: #475569;
+    --white: #ffffff;
+    --border: #e2e8f0;
+    --font-main: "Poppins", sans-serif;
+    --radius: 12px;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 15px;
+    color: var(--text);
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.nav-menu a.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-main {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-weight: 500;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+.btn-light-main {
+    background-color: var(--white);
+    color: var(--primary);
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-weight: 500;
+}
+
+.btn-light-main:hover,
+.btn-light-main:focus {
+    background-color: var(--accent);
+    color: var(--dark);
+}
+
+.hero {
+    background-color: var(--light);
+    padding: 40px 0;
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-title span {
+    color: var(--primary);
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 480px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: var(--radius);
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: var(--font-main);
+}
+
+.search-form input {
+    flex: 1;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    margin-bottom: 30px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.category-item {
+    background-color: var(--light);
+    border-radius: var(--radius);
+    padding: 25px;
+    text-align: center;
+}
+
+.category-item:nth-child(even) {
+    background-color: #fef3c7;
+}
+
+.category-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.category-count {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+#featured-jobs {
+    background-color: var(--light);
+}
+
+.job-card {
+    position: relative;
+    height: 100%;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 25px;
+}
+
+.job-card:hover {
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.job-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--accent);
+    color: var(--dark);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.job-logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 15px;
+}
+
+.job-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.job-company {
+    margin-bottom: 10px;
+}
+
+.job-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.job-info li {
+    margin-bottom: 4px;
+}
+
+.job-salary {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.step {
+    text-align: center;
+    padding: 20px;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 18px;
+}
+
+.cta {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius);
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    color: var(--white);
+}
+
+.page-banner {
+    background-color: var(--dark);
+    padding: 40px 0;
+}
+
+.page-banner h1 {
+    color: var(--white);
+    font-size: 28px;
+}
+
+.page-banner p {
+    color: #cbd5e1;
+    margin: 0;
+}
+
+.jobs-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.jobs-table th {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px;
+    text-align: left;
+}
+
+.jobs-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.jobs-table tbody tr:nth-child(even) {
+    background-color: var(--light);
+}
+
+.company-card {
+    height: 100%;
+    background-color: var(--light);
+    border-radius: var(--radius);
+    padding: 25px;
+    text-align: center;
+}
+
+.company-logo {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 15px;
+}
+
+.company-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.company-jobs {
+    display: block;
+    color: var(--primary);
+    font-weight: 500;
+    margin: 10px 0 15px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 460px;
+}
+
+.values-list {
+    padding-left: 20px;
+}
+
+.values-list li {
+    margin-bottom: 8px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: var(--light);
+    border-radius: var(--radius);
+    padding: 25px;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.contact-form {
+    background-color: var(--light);
+    border-radius: var(--radius);
+    padding: 25px;
+}
+
+.contact-info {
+    height: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 25px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer {
+    background-color: var(--dark);
+    color: #cbd5e1;
+    padding: 40px 0 20px;
+}
+
+.footer-title {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.social-links a {
+    color: #cbd5e1;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    color: var(--accent);
+}
+
+.copyright {
+    border-top: 1px solid #334155;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .search-form {
+        flex-direction: row;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta {
+        padding: 50px 40px;
+    }
+
+    .page-banner {
+        padding: 60px 0;
+    }
+
+    .page-banner h1 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-title {
+        font-size: 46px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .page-banner h1 {
+        font-size: 42px;
+    }
+}

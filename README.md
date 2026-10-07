@@ -42,4 +42,5 @@ JobFinder is a multi-page responsive website for finding jobs in Kazakhstan. Stu
 - GitHub Pages
 
 ## Published website
+https://alwoosh0.github.io/WEB_Technologies_Frontend_MidTerm/
 
